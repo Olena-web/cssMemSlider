@@ -1,1 +1,120 @@
+.container {
+  width: 80vw;
+  height: 80vh;
+  float: left;
+  margin-left: 8em;
+}
 
+.slider {
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+.labels {
+  display: grid;
+  gap: 3em;
+}
+.slider {
+  margin: 0 auto;
+}
+
+.slide,
+.text {
+  width: 20%;
+  float: left;
+}
+
+.image {
+  width: 500%;
+}
+
+.overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.container input,
+.text {
+  display: none;
+}
+
+#switch1:checked ~ .slides .image {
+  margin-left: 0;
+}
+#switch1:checked ~ .active .texts .text1 {
+  display: block;
+}
+#switch2:checked ~ .active .texts .text2 {
+  display: block;
+}
+#switch3:checked ~ .active .texts .text3 {
+  display: block;
+}
+#switch4:checked ~ .active .texts .text4 {
+  display: block;
+}
+#switch5:checked ~ .active .texts .text5 {
+  display: block;
+}
+
+#switch2:checked ~ .slides .image {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ .slides .image {
+  margin-left: -200%;
+}
+
+#switch4:checked ~ .slides .image {
+  margin-left: -300%;
+}
+
+#switch5:checked ~ .slides .image {
+  margin-left: -400%;
+}
+
+.active label {
+  border-radius: 50%;
+  border-width: 1em;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background: rgb(84, 158, 201);
+}
+
+.active {
+  margin: 3% 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.labels label:hover {
+  background: #09588d;
+  border-color: #777 !important;
+}
+
+.labels label:active {
+  background: red;
+}
+#switch1:checked ~ .active .labels .label1,
+#switch2:checked ~ .active .labels .label2,
+#switch3:checked ~ .active .labels .label3,
+#switch4:checked ~ .active .labels .label4,
+#switch5:checked ~ .active .labels .label5 {
+  background: #18dd18;
+  border-color: #29dd18 !important;
+}
+
+.slides .image,
+.texts .wrapper {
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cssMemSlider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input checked type="radio" name="respond" id="desktop" />
+      <div class="slider">
+        <input checked type="radio" name="slider" id="switch1" />
+        <input type="radio" name="slider" id="switch2" />
+        <input type="radio" name="slider" id="switch3" />
+        <input type="radio" name="slider" id="switch4" />
+        <input type="radio" name="slider" id="switch5" />
+        <div class="slides">
+          <div class="overflow">
+            <div class="image">
+              <div class="slide slide1"><img src="img/mem1.jpg" /></div>
+              <div class="slide slide2"><img src="img/mem2.jpg" /></div>
+              <div class="slide slide3"><img src="img/mem3.jpg" /></div>
+              <div class="slide slide4"><img src="img/mem4.jpg" /></div>
+              <div class="slide slide5"><img src="img/mem5.jpg" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="active">
+          <div class="texts">
+            <div class="overflow overflowtext">
+              <div class="wrapper">
+                <div class="text text1 fade">Task Museum in RS School</div>
+                <div class="text text2 fade">
+                  from hitting the wall of deadlines
+                </div>
+                <div class="text text3 fade">Binary Search Tree</div>
+                <div class="text text4 fade">
+                  Attempts number was over, so...
+                </div>
+                <div class="text text5 fade">learning JS</div>
+              </div>
+            </div>
+          </div>
+          <div class="labels">
+            <label class="label1" for="switch1"></label>
+            <label class="label2" for="switch2"></label>
+            <label class="label3" for="switch3"></label>
+            <label class="label4" for="switch4"></label>
+            <label class="label5" for="switch5"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
